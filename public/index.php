@@ -8,6 +8,12 @@ function request(): void {
     // Se obtiene el método (GET o POST) utilizado en la request
     $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
     
+    // Si es una petición GET pero NO viene ningún ID, se mostrará index.html
+    if ($method === 'GET' && empty($_GET['id'])) {
+        require_once __DIR__ . '/index.html';
+        return;
+    }
+    
     $controller = new VehicleController();
     
     // Si recibe una petición GET, llamará al método getById() del controlador
