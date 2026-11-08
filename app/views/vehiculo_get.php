@@ -1,5 +1,6 @@
 <?php
-    declare(strict_types=1);
+declare(strict_types=1);
+namespace app\views;
 ?>
 <!doctype html>
 <html lang="es">
@@ -17,10 +18,10 @@
                 <li>Modelo: <?= $vehiculoEncontrado->getModelo() ?></li>
                 <li>Año: <?= $vehiculoEncontrado->getAnio() ?></li>
                 <li>Tipo: <?= $vehiculoEncontrado->getTipo() ?></li>
-            	<?php if ($vehiculoEncontrado->getTipo() === "Coche") { ?>
+            	<?php if ($vehiculoEncontrado->getTipo() === "coche") { ?>
             		<li>Número de puertas: <?= $vehiculoEncontrado->getPuertas() ?></li>
-            	<?php } elseif ($vehiculoEncontrado->getTipo() === "Moto") { ?>
-            		<li>¿Tiene sidecar? <?= $vehiculoEncontrado->getSidecar() ? "Si" : "No" ?></li>
+            	<?php } elseif ($vehiculoEncontrado->getTipo() === "moto") { ?>
+            		<li>¿Tiene sidecar? <?= $vehiculoEncontrado->isSidecar() ? "Si" : "No" ?></li>
             	<?php } ?>
             </ul>
     	<?php } else { ?>
