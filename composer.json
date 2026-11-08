@@ -1,0 +1,15 @@
+{
+    "name": "esi/dwes03-ta6",
+    "autoload": {
+        "psr-4": {
+            "Esi\\Dwes03Ta6\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Raúl Vázquez",
+            "email": "ravazquez@ikaslea.birt.eus"
+        }
+    ],
+    "require": {}
+}
