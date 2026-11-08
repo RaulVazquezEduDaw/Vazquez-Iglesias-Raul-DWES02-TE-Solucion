@@ -1,8 +1,8 @@
 {
-    "name": "esi/dwes03-ta6",
+    "name": "raul_vazquez/dwes02-te-solucion",
     "autoload": {
         "psr-4": {
-            "Esi\\Dwes03Ta6\\": "src/"
+           "app\\": "app/"
         }
     },
     "authors": [
