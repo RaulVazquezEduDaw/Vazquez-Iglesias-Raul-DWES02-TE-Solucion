@@ -25,6 +25,6 @@ declare(strict_types=1);
             </ul>
     	<?php } ?>
     	<br>
-        <a href="../public/index.html">Volver</a>
+        <a href="./">Volver</a>
     </body>
 </html>

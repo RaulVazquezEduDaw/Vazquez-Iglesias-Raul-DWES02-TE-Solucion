@@ -27,6 +27,6 @@
     		<h1>No se ha encontrado ningún vehículo</h1>
     	<?php }?>
     	<br>
-        <a href="../public/index.html">Volver</a>
+        <a href="./">Volver</a>
     </body>
 </html>
